@@ -20,8 +20,6 @@ BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
 BuildRequires: python-matplotlib
 BuildRequires: libxml2-devel
-BuildRequires: doxygen
-BuildRequires: python-sphinx
 %if 0%{?openscenegraph_dist}
 
 %endif
@@ -115,9 +113,9 @@ in these cells.
 mkdir -p _build
 cd _build
 %if 0%{?openscenegraph_dist} 
-cmake -DWITH_DOC=ON -DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
+cmake -DWITH_DOC=OFF-DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
 %else
-cmake -DWITH_DOC=ON -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
+cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %endif
 
 %install

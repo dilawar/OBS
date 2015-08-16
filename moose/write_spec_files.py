@@ -31,8 +31,8 @@ core_build_depend_list_ = [
         , 'libbz2-devel'
         , 'python-matplotlib'
         , 'libxml2-devel'
-        , 'doxygen'
-        , 'python-sphinx'
+        #, 'doxygen'
+        #, 'python-sphinx'
         ]
 
 # essentials to run the moose-core
