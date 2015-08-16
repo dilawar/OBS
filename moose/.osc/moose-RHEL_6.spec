@@ -12,13 +12,13 @@ Source0: moose-%{version}.tar.gz
 License: GPL-3.0
 
 BuildRequires: gsl-devel
-BuildRequires: numpy, atlas
 BuildRequires: gcc-c++
 BuildRequires: cmake
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
 BuildRequires: python-matplotlib
+BuildRequires: python-networkx
 BuildRequires: libxml2-devel
 %if 0%{?openscenegraph_dist}
 
@@ -122,17 +122,17 @@ install package_data/moosegui %buildroot/%{_prefix}/bin/
 %files -n moose
 
 %files -n moose-core
-%{_prefix}/bin/moose.bin
+/usr/bin/moose.bin
 
 %files -n moose-python
 %defattr(-,root,root)
-%dir %{_prefix}/share/moose
-%{_prefix}/share/moose/moose-%{version}.tar.gz
+%dir /usr/share/moose
+/usr/share/moose/moose-%{version}.tar.gz
 
 %post -n moose-python
-tar xvf ${_prefix}/share/moose/moose-3.0.2.tar.gz -C /tmp
+tar xvf /usr/share/moose/moose-3.0.2.tar.gz -C /tmp
 cd /tmp/moose-3.0.2 
-python setup.py instlal --record=/etc/moose/installed_files.txt
+python setup.py install --record=/etc/moose/installed_files.txt
 
 %preun -n moose-python
 if [ -f /etc/moose/installed_files.txt ]; then
@@ -141,35 +141,37 @@ fi
 if [ -d /etc/moose ]; then
     rm -rf /etc/moose
 fi
-if [ -d %{_prefix}/share/moose ]; then
-    rm -rf ${_prefix}/share/moose 
+if [ -d /usr/share/moose ]; then
+    rm -rf /usr/share/moose 
 fi
 
 %files -n moose-gui
 %defattr(-,root,root)
-%dir %{_prefix}/lib/moose
-%dir %{_prefix}/lib/moose/gui
-%{_prefix}/lib/moose/gui
-%{_prefix}/bin/moosegui
-%{_prefix}/share/applications/moose.desktop
-%{_prefix}/share/icons/moose/moose.png
+%dir /usr/lib/moose
+%dir /usr/lib/moose/gui
+%dir /usr/share/icons/moose
+/usr/lib/moose/gui
+/usr/bin/moosegui
+/usr/share/applications/moose.desktop
+/usr/share/icons/moose/moose.png
 
 %if 0%{?openscenegraph_dist}
 %files -n moose-moogli
-%dir %{_prefix}/share/moogli
-%dir %{_prefix}/share/moogli/moogli-1.0.tar.gz
+%dir /usr/share/moogli
+%dir /usr/share/moogli/moogli-1.0.tar.gz
 
 %post -n moose-moogli
 mkdir -p /etc/moogli
-tar xvf ${_prefix}/share/moogli/moogli-1.0.tar.gz -C /tmp
-cd /tmp/moogli-1.0 && python setup.py install --record /etc/moogli/installed_files.txt
+tar xvf /usr/share/moogli/moogli-1.0.tar.gz -C /tmp
+cd /tmp/moogli-1.0 
+python setup.py install --record /etc/moogli/installed_files.txt
 
 %preun -n moose-moogli
 tr '\n' '\0' < /etc/moogli/installed_files.txt | xargs -0 rm -f --
 if [ -d /etc/moogli ]; then
     rm -rf /etc/moogli
 fi
-if [ -d %{_prefix}/share/moogli ]; then
-    rm -rf %{_prefix}/share/moogli 
+if [ -d /usr/share/moogli ]; then
+    rm -rf /usr/share/moogli 
 fi
 %endif
