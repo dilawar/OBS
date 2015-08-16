@@ -30,6 +30,8 @@ core_build_depend_list_ = [
         , 'python-setuptools'
         , 'libbz2-devel'
         , 'libxml2-devel'
+        , 'doxygen'
+        , 'python-sphinx'
         ]
 
 # essentials to run the moose-core

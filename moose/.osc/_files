@@ -1,12 +1,12 @@
-<directory name="moose" rev="2" srcmd5="47cd6406adbf23c7038d6d367bddd8d6" vrev="2">
-  <serviceinfo code="succeeded" xsrcmd5="832a5fd2ab2b8c2236dab2a397d9a929" />
+<directory name="moose" rev="3" srcmd5="1896e1252ed8337b17645c076fdc275b" vrev="3">
+  <serviceinfo code="succeeded" xsrcmd5="b7416c53156699b720a1735c32f45097" />
   <entry md5="4463c65100082b9fe397dd36ce1b3078" mtime="1415796630" name="README" size="388" />
   <entry md5="701ef3fad9a36d52041c16eabb8b4249" mtime="1418539251" name="README.source" size="257" />
   <entry md5="f167e7ee56428501e76f4fae0116aad0" mtime="1438903882" name="_service" size="541" />
   <entry md5="0f9f4689cda6cfbb3cea4e98e4e48c1c" mtime="1439006308" name="build.sh" size="295" />
   <entry md5="0d76b1d1ccec987d05cf46102a8168af" mtime="1439239016" name="build_all.sh" size="602" />
-  <entry md5="7c5aba41f53293b712fd86d08ed5b36e" mtime="1439724097" name="debian.changelog" size="2" />
-  <entry md5="41a8a08e33b4f4895183a7b95a997936" mtime="1439538098" name="debian.control" size="2765" />
+  <entry md5="b05697b50fd37f664199e0379a475598" mtime="1439538096" name="debian.changelog" size="260" />
+  <entry md5="12ea23aa038ba0c0c202c7d20c7f9151" mtime="1439727381" name="debian.control" size="2802" />
   <entry md5="4cf3bf67e7a77f6576ab0f3e6d44e827" mtime="1439724098" name="debian.copyright" size="1181" />
   <entry md5="38edaa087b8b7c46bf22a405935602b1" mtime="1439538099" name="debian.rules" size="756" />
   <entry md5="269938acb47f7a994339e368f04e623d" mtime="1439724098" name="moose-Arch_Core.spec" size="4719" />
@@ -37,6 +37,7 @@
   <entry md5="41da001eb5877f6b971b76d82d1ec58a" mtime="1439563229" name="moose-python.install" size="30" />
   <entry md5="c75974707bd42c85612786c58859d304" mtime="1439714484" name="moose-python.postinst" size="1243" />
   <entry md5="2afebbdab1f146c68f191f9f8ef7de87" mtime="1439714486" name="moose-python.prerm" size="2817" />
+  <entry md5="993f8fc2f4e447343c015d2ecd8c1a63" mtime="1439727382" name="moose.dsc" size="546" />
   <entry md5="7e4c6dbc49f507d31d20e45a8df5433b" mtime="1439724114" name="moose.spec.template" size="4434" />
   <entry md5="13dccd937e91febcdef02f8420606d7a" mtime="1439302705" name="write_spec_files.py" size="5154" />
 </directory>
