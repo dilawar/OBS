@@ -12,13 +12,13 @@ Source0: moose-%{version}.tar.gz
 License: GPL-3.0
 
 BuildRequires: gsl-devel
-BuildRequires: numpy
 BuildRequires: gcc-c++
 BuildRequires: cmake
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
 BuildRequires: python-matplotlib
+BuildRequires: python-networkx
 BuildRequires: libxml2-devel
 %if 0%{?openscenegraph_dist}
 
@@ -41,7 +41,6 @@ written in C++.
 Requires: moose-core
 Requires: moose-gui
 Requires: moose-python
-Requires: moose-doc
 %if 0%{?openscenegraph_dist} 
 Requires: moose-moogli
 %endif
@@ -86,11 +85,6 @@ Requires: PyQt4
 Requires: moose-python
 Requires: python-networkx
 Requires: python-suds
-
-%package -n moose-doc
-Summary: MOOSE documentation
-%description -n moose-doc
-This package contains user and developer documentation.
 
 %if 0%{?openscenegraph_dist} 
 
@@ -159,10 +153,6 @@ fi
 %{_prefix}/bin/moosegui
 %{_prefix}/share/applications/moose.desktop
 %{_prefix}/share/icons/moose/moose.png
-
-%files -n moose-doc
-%dir %{_prefix}/share/doc/moose
-%{_prefix}/share/doc/moose
 
 %if 0%{?openscenegraph_dist}
 %files -n moose-moogli

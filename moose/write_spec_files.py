@@ -23,13 +23,13 @@ import sys
 # name of the essentials required to build the moose-core and moose-python.
 core_build_depend_list_ = [
         'gsl-devel'
-        , 'numpy'
         , 'gcc-c++'
         , 'cmake'
         , 'python-devel'
         , 'python-setuptools'
         , 'libbz2-devel'
         , 'python-matplotlib'
+        , 'python-networkx'
         , 'libxml2-devel'
         #, 'doxygen'
         #, 'python-sphinx'

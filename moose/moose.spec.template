@@ -33,7 +33,6 @@ written in C++.
 Requires: moose-core
 Requires: moose-gui
 Requires: moose-python
-Requires: moose-doc
 %if 0%{?openscenegraph_dist} 
 Requires: moose-moogli
 %endif
@@ -70,11 +69,6 @@ Group: Applications/Biology
 GUI frontend. It uses openscenegraph to visualize neural networks.
 
 <<moose-guiRequires>>
-
-%package -n moose-doc
-Summary: MOOSE documentation
-%description -n moose-doc
-This package contains user and developer documentation.
 
 %if 0%{?openscenegraph_dist} 
 
@@ -139,14 +133,11 @@ fi
 %defattr(-,root,root)
 %dir %{_prefix}/lib/moose
 %dir %{_prefix}/lib/moose/gui
+%dir %{_prefix}/share/icons/moose
 %{_prefix}/lib/moose/gui
 %{_prefix}/bin/moosegui
 %{_prefix}/share/applications/moose.desktop
 %{_prefix}/share/icons/moose/moose.png
-
-%files -n moose-doc
-%dir %{_prefix}/share/doc/moose
-%{_prefix}/share/doc/moose
 
 %if 0%{?openscenegraph_dist}
 %files -n moose-moogli

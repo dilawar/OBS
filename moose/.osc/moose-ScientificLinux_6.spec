@@ -1,7 +1,7 @@
 %global branch 3.0.2
 %global version 3.0.2
 %define _unpackaged_files_terminate_build 0 
-Name: moose
+Name: moose-src
 Group: Applications/Biology
 Summary: MOOSE is the Multiscale Object-Oriented Simulation Environment
 Version: 3.0.2
@@ -20,8 +20,6 @@ BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
 BuildRequires: python-matplotlib
 BuildRequires: libxml2-devel
-BuildRequires: doxygen
-BuildRequires: python-sphinx
 %if 0%{?openscenegraph_dist}
 
 %endif
@@ -43,10 +41,17 @@ written in C++.
 Requires: moose-core
 Requires: moose-gui
 Requires: moose-python
-Requires: moose-doc
 %if 0%{?openscenegraph_dist} 
 Requires: moose-moogli
 %endif
+
+%package -n moose
+Summary: Meta package of MOOSE simulator.
+Group: Application/Biology
+%description -n moose
+This is meta package of MOOSE simulator. Its contains python bindings and GUI.
+Requires: moose-python
+Requires: moose-gui
 
 %package -n moose-core
 Summary: MOOSE simulator, C++ core
@@ -81,11 +86,6 @@ Requires: moose-python
 Requires: python-networkx
 Requires: python-suds
 
-%package -n moose-doc
-Summary: MOOSE documentation
-%description -n moose-doc
-This package contains user and developer documentation.
-
 %if 0%{?openscenegraph_dist} 
 
 %package -n moose-moogli
@@ -107,9 +107,9 @@ in these cells.
 mkdir -p _build
 cd _build
 %if 0%{?openscenegraph_dist} 
-cmake -DWITH_DOC=ON -DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
+cmake -DWITH_DOC=OFF-DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
 %else
-cmake -DWITH_DOC=ON -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
+cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %endif
 
 %install
@@ -153,10 +153,6 @@ fi
 %{_prefix}/bin/moosegui
 %{_prefix}/share/applications/moose.desktop
 %{_prefix}/share/icons/moose/moose.png
-
-%files -n moose-doc
-%dir %{_prefix}/share/doc/moose
-%{_prefix}/share/doc/moose
 
 %if 0%{?openscenegraph_dist}
 %files -n moose-moogli
