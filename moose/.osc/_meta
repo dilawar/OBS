@@ -1,0 +1,6 @@
+<package name="moose" project="home:moose">
+  <title>MOOSE simulator</title>
+  <description>MOOSE is the Multiscale Object-Oriented Simulation Environment.&#13;
+It is designed to simulate neural systems ranging from subcellular components and biochemical reactions to complex models of single neurons, circuits, and large networks. MOOSE can operate at many levels of detail, from stochastic chemical computations, to multicompartment single-neuron models, to spiking neuron network models.</description>
+</package>
+
