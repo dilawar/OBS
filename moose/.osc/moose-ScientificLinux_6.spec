@@ -19,6 +19,8 @@ BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
 BuildRequires: libxml2-devel
+BuildRequires: doxygen
+BuildRequires: python-sphinx
 %if 0%{?openscenegraph_dist}
 
 %endif

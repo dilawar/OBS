@@ -12,13 +12,17 @@ Source0: moose-%{version}.tar.gz
 License: GPL-3.0
 
 BuildRequires: gsl-devel
-BuildRequires: numpy
+BuildRequires: numpy, atlas
 BuildRequires: gcc-c++
 BuildRequires: cmake
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
+BuildRequires: python-matolotlib
+BuildRequires: python-numpy
 BuildRequires: libxml2-devel
+BuildRequires: doxygen
+BuildRequires: python-sphinx
 %if 0%{?openscenegraph_dist}
 
 %endif
@@ -64,7 +68,7 @@ Group: Applications/Biology
 This package contains python interface of MOOSE simulator.
 
 Requires: python-matplotlib
-Requires: numpy
+Requires: numpy, atlas
 Requires: moose-core
 
 %package -n moose-gui
@@ -73,7 +77,7 @@ Group: Applications/Biology
 %description -n moose-gui
 GUI frontend. It uses openscenegraph to visualize neural networks.
 
-Requires: PyQt4
+Requires: python-qt4
 Requires: moose-python
 Requires: python-networkx
 Requires: python-suds

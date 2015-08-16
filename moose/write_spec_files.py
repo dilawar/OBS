@@ -29,6 +29,8 @@ core_build_depend_list_ = [
         , 'python-devel'
         , 'python-setuptools'
         , 'libbz2-devel'
+        , 'python-matolotlib'
+        , 'python-numpy'
         , 'libxml2-devel'
         , 'doxygen'
         , 'python-sphinx'
@@ -66,7 +68,7 @@ _alternative = {
         }
 
 repos_ = { "CentOS" : [6, 7]
-        , "Fedora" : [18, 19, 20 ]
+        , "Fedora" : [20, 21, 22 ]
         , "RHEL" : [ 5, 6, 7 ]
         , "SLE" : [ "11_SP2", "11_SP3", 12 ]
         , "ScientificLinux" : [6, 7]
