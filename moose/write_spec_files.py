@@ -30,7 +30,6 @@ core_build_depend_list_ = [
         , 'python-setuptools'
         , 'libbz2-devel'
         , 'python-matolotlib'
-        , 'python-numpy'
         , 'libxml2-devel'
         , 'doxygen'
         , 'python-sphinx'
