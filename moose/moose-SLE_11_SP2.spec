@@ -1,7 +1,7 @@
 %global branch 3.0.2
 %global version 3.0.2
 %define _unpackaged_files_terminate_build 0 
-Name: moose
+Name: moose-src
 Group: Applications/Biology
 Summary: MOOSE is the Multiscale Object-Oriented Simulation Environment
 Version: 3.0.2
@@ -47,6 +47,14 @@ Requires: moose-doc
 %if 0%{?openscenegraph_dist} 
 Requires: moose-moogli
 %endif
+
+%package -n moose
+Summary: Meta package of MOOSE simulator.
+Group: Application/Biology
+%description -n moose
+This is meta package of MOOSE simulator. Its contains python bindings and GUI.
+Requires: moose-python
+Requires: moose-gui
 
 %package -n moose-core
 Summary: MOOSE simulator, C++ core
