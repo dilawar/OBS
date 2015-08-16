@@ -4,6 +4,7 @@ Priority: optional
 Maintainer: Dilawar Singh <dilawars@ncbs.res.in>
 Build-Depends: debhelper, cdbs, devscripts, cmake, python-setuptools, doxygen,
     python-sphinx, python-qt4, python-qt4-dev, libopenscenegraph-dev, python-sip-dev, 
+    python-matplotlib,
     libqt4-dev, libqt4-opengl-dev, libxml2-dev, libbz2-dev, python-dev, python-numpy, 
     libhdf5-serial-dev, libgsl0-dev, python-qt4-gl, texi2html, texinfo
 Standards-Version: 3.9.5

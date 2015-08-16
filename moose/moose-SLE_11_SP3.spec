@@ -18,7 +18,7 @@ BuildRequires: cmake
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
-BuildRequires: python-matolotlib
+BuildRequires: python-matplotlib
 BuildRequires: libxml2-devel
 BuildRequires: doxygen
 BuildRequires: python-sphinx
