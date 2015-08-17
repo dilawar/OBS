@@ -68,7 +68,7 @@ _alternative = {
 repos_ = { "CentOS" : [6, 7]
         , "Fedora" : [20, 21, 22 ]
         , "RHEL" : [ 5, 6, 7 ]
-        , "SLE" : [ "11_SP2", "11_SP3", 12 ]
+        , "SLE" : [ "11_SP2", "11_SP3", "11_SP4", 12 ]
         , "ScientificLinux" : [6, 7]
         , "Arch" : ["Core", "Extra"]
         , "openSUSE" : [ "12.3", "13.1", "13.2", "Tumbleweed", "Factory_ARM" ]

@@ -106,7 +106,7 @@ in these cells.
 mkdir -p _build
 cd _build
 %if 0%{?openscenegraph_dist} 
-cmake -DWITH_DOC=OFF-DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
+cmake -DWITH_DOC=OFF -DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
 %else
 cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %endif
@@ -114,9 +114,9 @@ cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %install
 cd _build
 ctest --output-on-failure && make install
-mkdir -p %buildroot/%{_prefix}/lib/moose/gui
-cd .. &&  cp -r moose-gui/* %buildroot/%{_prefix}/lib/moose/gui/
-install package_data/moosegui %buildroot/%{_prefix}/bin/
+mkdir -p %buildroot/usr/lib/moose/gui
+cd .. &&  cp -r moose-gui/* %buildroot/usr/lib/moose/gui/
+install package_data/moosegui %buildroot/usr/bin/
 
 %files -n moose
 

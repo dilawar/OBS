@@ -13,17 +13,6 @@ openSUSE_13.2 i586
 openSUSE_13.2 x86_64
 openSUSE_13.1 i586
 openSUSE_13.1 x86_64
-images i586
-images x86_64
-images ppc
-images ppc64
-images s390x
-images local
-images armv6l
-images armv7l
-images aarch64
-images ppc64p7
-images ppc64le
 Univention_4.0 i586
 Univention_4.0 x86_64
 Univention_3.2 i586
