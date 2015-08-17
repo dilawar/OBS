@@ -28,8 +28,7 @@ core_build_depend_list_ = [
         , 'python-devel'
         , 'python-setuptools'
         , 'libbz2-devel'
-        , 'python-matplotlib'
-        , 'python-networkx'
+        , 'numpy'
         , 'libxml2-devel'
         #, 'doxygen'
         #, 'python-sphinx'
@@ -63,7 +62,7 @@ _alternative = {
         , 'CentOS' : {'PyQt4' : 'python-qt4', 'numpy' : 'numpy, atlas' }
         , 'RHEL'  : { 'numpy' : 'numpy, atlas', 'PyQt4' : 'python-qt4' }
         , 'SLE' : { 'numpy' : 'python-numpy' }
-        , 'ScientificLinux' : { 'numpy' : 'numpy, atlas' }
+        , 'ScientificLinux' : { 'numpy' : 'numpy, atlas, lapack' }
         }
 
 repos_ = { "CentOS" : [6, 7]

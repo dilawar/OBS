@@ -17,8 +17,7 @@ BuildRequires: cmake
 BuildRequires: python-devel
 BuildRequires: python-setuptools
 BuildRequires: libbz2-devel
-BuildRequires: python-matplotlib
-BuildRequires: python-networkx
+BuildRequires: numpy, atlas
 BuildRequires: libxml2-devel
 %if 0%{?openscenegraph_dist}
 
@@ -130,6 +129,7 @@ install package_data/moosegui %buildroot/%{_prefix}/bin/
 /usr/share/moose/moose-%{version}.tar.gz
 
 %post -n moose-python
+mkdir -p /etc/moose
 tar xvf /usr/share/moose/moose-3.0.2.tar.gz -C /tmp
 cd /tmp/moose-3.0.2 
 python setup.py install --record=/etc/moose/installed_files.txt
@@ -158,7 +158,7 @@ fi
 %if 0%{?openscenegraph_dist}
 %files -n moose-moogli
 %dir /usr/share/moogli
-%dir /usr/share/moogli/moogli-1.0.tar.gz
+/usr/share/moogli/moogli-1.0.tar.gz
 
 %post -n moose-moogli
 mkdir -p /etc/moogli
