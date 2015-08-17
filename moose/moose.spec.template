@@ -99,8 +99,9 @@ cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %install
 cd _build
 ctest --output-on-failure && make install
+cd ..
 mkdir -p %buildroot/usr/lib/moose/gui
-cd .. &&  cp -r moose-gui/* %buildroot/usr/lib/moose/gui/
+cp -r moose-gui/* %buildroot/usr/lib/moose/gui/
 install package_data/moosegui %buildroot/usr/bin/
 
 %files -n moose
