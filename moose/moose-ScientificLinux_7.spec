@@ -45,7 +45,7 @@ Requires: moose-moogli
 %endif
 
 %package -n moose
-Summary: Meta package of MOOSE simulator.
+Summary: Meta package of MOOSE simulator
 Group: Application/Biology
 %description -n moose
 This is meta package of MOOSE simulator. Its contains python bindings and GUI.
@@ -65,7 +65,7 @@ Requires: gsl
 Requires: bzip2
 
 %package -n moose-python
-Summary: Python-2 interface for %{name}
+Summary: Python interface of MOOSE
 Group: Applications/Biology
 %description -n moose-python
 This package contains python interface of MOOSE simulator.
@@ -141,9 +141,6 @@ fi
 if [ -d /etc/moose ]; then
     rm -rf /etc/moose
 fi
-if [ -d /usr/share/moose ]; then
-    rm -rf /usr/share/moose 
-fi
 
 %files -n moose-gui
 %defattr(-,root,root)
@@ -170,8 +167,5 @@ python setup.py install --record /etc/moogli/installed_files.txt
 tr '\n' '\0' < /etc/moogli/installed_files.txt | xargs -0 rm -f --
 if [ -d /etc/moogli ]; then
     rm -rf /etc/moogli
-fi
-if [ -d /usr/share/moogli ]; then
-    rm -rf /usr/share/moogli 
 fi
 %endif

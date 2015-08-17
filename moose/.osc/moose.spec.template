@@ -38,7 +38,7 @@ Requires: moose-moogli
 %endif
 
 %package -n moose
-Summary: Meta package of MOOSE simulator.
+Summary: Meta package of MOOSE simulator
 Group: Application/Biology
 %description -n moose
 This is meta package of MOOSE simulator. Its contains python bindings and GUI.
@@ -55,7 +55,7 @@ try moose-python.
 <<moose-coreRequires>>
 
 %package -n moose-python
-Summary: Python-2 interface for %{name}
+Summary: Python interface of MOOSE
 Group: Applications/Biology
 %description -n moose-python
 This package contains python interface of MOOSE simulator.
@@ -91,7 +91,7 @@ in these cells.
 mkdir -p _build
 cd _build
 %if 0%{?openscenegraph_dist} 
-cmake -DWITH_DOC=OFF-DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
+cmake -DWITH_DOC=OFF -DBUILD_MOOGLI=TRUE  -DCMAKE_INSTALL_PREFIX=%buildroot/usr ..  && make -j`nproc`
 %else
 cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %endif
@@ -99,9 +99,9 @@ cmake -DWITH_DOC=OFF -DCMAKE_INSTALL_PREFIX=%buildroot/usr .. && make -j`nproc`
 %install
 cd _build
 ctest --output-on-failure && make install
-mkdir -p %buildroot/%{_prefix}/lib/moose/gui
-cd .. &&  cp -r moose-gui/* %buildroot/%{_prefix}/lib/moose/gui/
-install package_data/moosegui %buildroot/%{_prefix}/bin/
+mkdir -p %buildroot/usr/lib/moose/gui
+cd .. &&  cp -r moose-gui/* %buildroot/usr/lib/moose/gui/
+install package_data/moosegui %buildroot/usr/bin/
 
 %files -n moose
 
@@ -125,9 +125,6 @@ if [ -f /etc/moose/installed_files.txt ]; then
 fi
 if [ -d /etc/moose ]; then
     rm -rf /etc/moose
-fi
-if [ -d /usr/share/moose ]; then
-    rm -rf /usr/share/moose 
 fi
 
 %files -n moose-gui
@@ -155,8 +152,5 @@ python setup.py install --record /etc/moogli/installed_files.txt
 tr '\n' '\0' < /etc/moogli/installed_files.txt | xargs -0 rm -f --
 if [ -d /etc/moogli ]; then
     rm -rf /etc/moogli
-fi
-if [ -d /usr/share/moogli ]; then
-    rm -rf /usr/share/moogli 
 fi
 %endif

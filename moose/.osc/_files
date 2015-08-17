@@ -1,44 +1,44 @@
-<directory name="moose" rev="15" srcmd5="b3c9e0f5103c66c00012b1a7426b3ba6" vrev="15">
-  <serviceinfo code="running" />
+<directory name="moose" rev="17" srcmd5="4c00f83851eb4c48bffbeb9f714a85e9" vrev="17">
+  <serviceinfo code="succeeded" xsrcmd5="dcfd5b8da664ca50c7c52da227dc4cbd" />
   <entry md5="4463c65100082b9fe397dd36ce1b3078" mtime="1415796630" name="README" size="388" />
   <entry md5="701ef3fad9a36d52041c16eabb8b4249" mtime="1418539251" name="README.source" size="257" />
   <entry md5="f167e7ee56428501e76f4fae0116aad0" mtime="1438903882" name="_service" size="541" />
   <entry md5="4b0c332cf9e508c048f6c4b4d20204fa" mtime="1439736511" name="build.sh" size="232" />
   <entry md5="0d76b1d1ccec987d05cf46102a8168af" mtime="1439239016" name="build_all.sh" size="602" />
   <entry md5="b05697b50fd37f664199e0379a475598" mtime="1439538096" name="debian.changelog" size="260" />
-  <entry md5="c326ab4c90ff9b373b144ccd4e58f32d" mtime="1439756589" name="debian.control" size="2825" />
-  <entry md5="4cf3bf67e7a77f6576ab0f3e6d44e827" mtime="1439724098" name="debian.copyright" size="1181" />
+  <entry md5="53a8c432d402762cb0832fbf01eb447f" mtime="1439775453" name="debian.control" size="2207" />
+  <entry md5="6342373f59f87e694fef312c6e375729" mtime="1439775550" name="debian.copyright" size="1181" />
   <entry md5="38edaa087b8b7c46bf22a405935602b1" mtime="1439538099" name="debian.rules" size="756" />
-  <entry md5="ad345cf0e6231eb3674c77bf746b24a1" mtime="1439769216" name="moose-Arch_Core.spec" size="4661" />
-  <entry md5="ad345cf0e6231eb3674c77bf746b24a1" mtime="1439769216" name="moose-Arch_Extra.spec" size="4661" />
-  <entry md5="1ea2cc0ce99f6367a1b9e3e2e6d0f4b1" mtime="1439769217" name="moose-CentOS_6.spec" size="4680" />
-  <entry md5="1ea2cc0ce99f6367a1b9e3e2e6d0f4b1" mtime="1439769218" name="moose-CentOS_7.spec" size="4680" />
-  <entry md5="ad345cf0e6231eb3674c77bf746b24a1" mtime="1439769219" name="moose-Fedora_20.spec" size="4661" />
-  <entry md5="ad345cf0e6231eb3674c77bf746b24a1" mtime="1439769220" name="moose-Fedora_21.spec" size="4661" />
-  <entry md5="ad345cf0e6231eb3674c77bf746b24a1" mtime="1439769221" name="moose-Fedora_22.spec" size="4661" />
-  <entry md5="1ea2cc0ce99f6367a1b9e3e2e6d0f4b1" mtime="1439769222" name="moose-RHEL_6.spec" size="4680" />
-  <entry md5="1ea2cc0ce99f6367a1b9e3e2e6d0f4b1" mtime="1439769223" name="moose-RHEL_7.spec" size="4680" />
-  <entry md5="0881646e336923db8927a95ec5a23572" mtime="1439769224" name="moose-SLE_11_SP2.spec" size="4675" />
-  <entry md5="0881646e336923db8927a95ec5a23572" mtime="1439769225" name="moose-SLE_11_SP3.spec" size="4675" />
-  <entry md5="0881646e336923db8927a95ec5a23572" mtime="1439773444" name="moose-SLE_11_SP4.spec" size="4675" />
-  <entry md5="0881646e336923db8927a95ec5a23572" mtime="1439769226" name="moose-SLE_12.spec" size="4675" />
-  <entry md5="d2091d0da117846411b3f14c64769862" mtime="1439769227" name="moose-ScientificLinux_6.spec" size="4691" />
-  <entry md5="d2091d0da117846411b3f14c64769862" mtime="1439769228" name="moose-ScientificLinux_7.spec" size="4691" />
+  <entry md5="4e257b557e68ba7978033a9a4e9a6ae7" mtime="1439777163" name="moose-Arch_Core.spec" size="4503" />
+  <entry md5="4e257b557e68ba7978033a9a4e9a6ae7" mtime="1439777164" name="moose-Arch_Extra.spec" size="4503" />
+  <entry md5="116e048fa8f195347a45164e6d04be07" mtime="1439777165" name="moose-CentOS_6.spec" size="4522" />
+  <entry md5="116e048fa8f195347a45164e6d04be07" mtime="1439777166" name="moose-CentOS_7.spec" size="4522" />
+  <entry md5="4e257b557e68ba7978033a9a4e9a6ae7" mtime="1439777167" name="moose-Fedora_20.spec" size="4503" />
+  <entry md5="4e257b557e68ba7978033a9a4e9a6ae7" mtime="1439777167" name="moose-Fedora_21.spec" size="4503" />
+  <entry md5="4e257b557e68ba7978033a9a4e9a6ae7" mtime="1439777168" name="moose-Fedora_22.spec" size="4503" />
+  <entry md5="116e048fa8f195347a45164e6d04be07" mtime="1439777169" name="moose-RHEL_6.spec" size="4522" />
+  <entry md5="116e048fa8f195347a45164e6d04be07" mtime="1439777170" name="moose-RHEL_7.spec" size="4522" />
+  <entry md5="d435976d836788421ca2be7854a0190e" mtime="1439777171" name="moose-SLE_11_SP2.spec" size="4517" />
+  <entry md5="d435976d836788421ca2be7854a0190e" mtime="1439777172" name="moose-SLE_11_SP3.spec" size="4517" />
+  <entry md5="d435976d836788421ca2be7854a0190e" mtime="1439777173" name="moose-SLE_11_SP4.spec" size="4517" />
+  <entry md5="d435976d836788421ca2be7854a0190e" mtime="1439777174" name="moose-SLE_12.spec" size="4517" />
+  <entry md5="c2f40e328aead5324e856c476b3f6596" mtime="1439777175" name="moose-ScientificLinux_6.spec" size="4533" />
+  <entry md5="c2f40e328aead5324e856c476b3f6596" mtime="1439777176" name="moose-ScientificLinux_7.spec" size="4533" />
   <entry md5="0a5729d57582d2a9e69283e5b1c09bd6" mtime="1439563223" name="moose-core.install" size="18" />
   <entry md5="18df75f58fadf43e3cbcbc996d1916c8" mtime="1418539257" name="moose-doc.install" size="20" />
   <entry md5="da63476735154b84edd073eccce04d1f" mtime="1439563225" name="moose-moogli.install" size="32" />
   <entry md5="1ccd231641c6d106bcc34371634c4e7e" mtime="1439724109" name="moose-moogli.postinst" size="1208" />
   <entry md5="6e0c6e16ea8882d68d699a028ab12f5c" mtime="1439724109" name="moose-moogli.prerm" size="2048" />
   <entry md5="6040c0642df608c2802f9e2f475feefa" mtime="1438910601" name="moose-openSUSE_12.2.spec" size="3986" />
-  <entry md5="cec70264d1af098883cda2d0a96a5951" mtime="1439769229" name="moose-openSUSE_12.3.spec" size="4680" />
-  <entry md5="cec70264d1af098883cda2d0a96a5951" mtime="1439769231" name="moose-openSUSE_13.1.spec" size="4680" />
-  <entry md5="cec70264d1af098883cda2d0a96a5951" mtime="1439769232" name="moose-openSUSE_13.2.spec" size="4680" />
-  <entry md5="cec70264d1af098883cda2d0a96a5951" mtime="1439769232" name="moose-openSUSE_Factory_ARM.spec" size="4680" />
-  <entry md5="cec70264d1af098883cda2d0a96a5951" mtime="1439769234" name="moose-openSUSE_Tumbleweed.spec" size="4680" />
+  <entry md5="42e98172e723a129b41dc6e0e94cedb2" mtime="1439777177" name="moose-openSUSE_12.3.spec" size="4522" />
+  <entry md5="42e98172e723a129b41dc6e0e94cedb2" mtime="1439777178" name="moose-openSUSE_13.1.spec" size="4522" />
+  <entry md5="42e98172e723a129b41dc6e0e94cedb2" mtime="1439777179" name="moose-openSUSE_13.2.spec" size="4522" />
+  <entry md5="42e98172e723a129b41dc6e0e94cedb2" mtime="1439777180" name="moose-openSUSE_Factory_ARM.spec" size="4522" />
+  <entry md5="42e98172e723a129b41dc6e0e94cedb2" mtime="1439777181" name="moose-openSUSE_Tumbleweed.spec" size="4522" />
   <entry md5="41da001eb5877f6b971b76d82d1ec58a" mtime="1439563229" name="moose-python.install" size="30" />
   <entry md5="c75974707bd42c85612786c58859d304" mtime="1439714484" name="moose-python.postinst" size="1243" />
   <entry md5="2afebbdab1f146c68f191f9f8ef7de87" mtime="1439714486" name="moose-python.prerm" size="2817" />
-  <entry md5="cd340e76f9a5e0b67e9c0e343cab630f" mtime="1439756607" name="moose.dsc" size="569" />
-  <entry md5="6ba5c02459afcbf9de3a278746aa3c99" mtime="1439768726" name="moose.spec.template" size="4376" />
+  <entry md5="1124382602c38d774c02ddad0879f74e" mtime="1439775557" name="moose.dsc" size="550" />
+  <entry md5="fea296ee60244561ad319eca28e62881" mtime="1439777182" name="moose.spec.template" size="4218" />
   <entry md5="14c0773335864ea570002bf4481c0d8d" mtime="1439773445" name="write_spec_files.py" size="5220" />
 </directory>
