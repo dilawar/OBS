@@ -1,6 +1,7 @@
 Format: 1.0
 Source: moose
 Version: 3.0.2
+Standards-Version: 3.9.5
 Binary: moose
 Maintainer: Dilawar Singh <dilawars@ncbs.res.in>
 Architecture: any

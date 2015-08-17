@@ -1,5 +1,5 @@
-<directory name="moose" rev="21" srcmd5="d23539c1807955204bb9228863c8573c" vrev="21">
-  <serviceinfo code="succeeded" xsrcmd5="5f46b154a10e5ba27df0960524417ad5" />
+<directory name="moose" rev="23" srcmd5="c792f7014003cf3f047761015687dca6" vrev="23">
+  <serviceinfo code="succeeded" xsrcmd5="43f5548344fcccbc4ba6748db64fbc0d" />
   <entry md5="4463c65100082b9fe397dd36ce1b3078" mtime="1415796630" name="README" size="388" />
   <entry md5="701ef3fad9a36d52041c16eabb8b4249" mtime="1418539251" name="README.source" size="257" />
   <entry md5="f167e7ee56428501e76f4fae0116aad0" mtime="1438903882" name="_service" size="541" />
@@ -8,7 +8,8 @@
   <entry md5="b05697b50fd37f664199e0379a475598" mtime="1439538096" name="debian.changelog" size="260" />
   <entry md5="d72f6bbdcb287b97353016f9a6b35494" mtime="1439842496" name="debian.control" size="1997" />
   <entry md5="6342373f59f87e694fef312c6e375729" mtime="1439775550" name="debian.copyright" size="1181" />
-  <entry md5="c974faaf2e1e8d754426fbdf87f51b60" mtime="1439842497" name="debian.rules" size="758" />
+  <entry md5="8842a94276ef4dd3f77aba65aba9cbe7" mtime="1439848990" name="debian.lintian-override" size="52" />
+  <entry md5="e5e8865904b4b9a5f4dccec69ecf9352" mtime="1439844709" name="debian.rules" size="741" />
   <entry md5="13f090488775ddb6d951bcd3a8f6f5e4" mtime="1439778120" name="moose-Arch_Core.spec" size="4499" />
   <entry md5="13f090488775ddb6d951bcd3a8f6f5e4" mtime="1439778120" name="moose-Arch_Extra.spec" size="4499" />
   <entry md5="f6a206e6f0f99b5661cd6a70e6da27b2" mtime="1439778121" name="moose-CentOS_6.spec" size="4518" />
