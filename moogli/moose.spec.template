@@ -1,0 +1,65 @@
+%global branch 1.0.0
+%global version 1.0.0
+%define _unpackaged_files_terminate_build 0 
+Name: moogli-src
+Group: Applications/Biology
+Summary: Moogli s a simulator independent openGL based visualization tool for neural simulations
+Version: 1.0.0
+Release: 1%{?dist}
+Url: https://moose.ncbs.res.in/moolgi
+Source0: moogli-%{version}.tar.gz
+
+License: GPL-3.0
+
+<<MoogliBuildRequires>>
+
+%description
+Moogli s a simulator independent openGL based visualization tool for neural
+simulations.
+
+Moogli (a sister project of MOOSE) is a simulator independent openGL based
+visualization tool for neural simulations. Moogli can visualize morphology of
+single/multiple neurons or network of neurons, and can also visualize activity
+in these cells.
+
+Moogli is like VLC player for neural simulations.
+
+Requires: moose-gui
+
+%package -n moogli
+Summary: Visualizer for neural simulators
+%description -n moose-moogli
+Moogli (a sister project of MOOSE) is a simulator independent openGL based
+visualization tool for neural simulations. Moogli can visualize morphology of
+single/multiple neurons or network of neurons, and can also visualize activity
+in these cells.
+
+<<moogliRequires>>
+
+
+%prep
+%setup -q -n moogli-%{version}
+
+%build
+mkdir -p _build
+cd _build
+cmake ..  && make
+
+%install
+cd _build && make install
+
+%files -n moogli
+%dir /usr/share/moogli
+/usr/share/moogli/moogli-1.0.0.tar.gz
+
+%post -n moogli
+mkdir -p /etc/moogli
+tar xvf /usr/share/moogli/moogli-1.0.0.tar.gz -C /tmp
+cd /tmp/moogli-1.0 
+python setup.py install --record /etc/moogli/installed_files.txt
+
+%preun -n moogli
+tr '\n' '\0' < /etc/moogli/installed_files.txt | xargs -0 rm -f --
+if [ -d /etc/moogli ]; then
+    rm -rf /etc/moogli
+fi
